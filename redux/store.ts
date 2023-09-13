@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { userApi } from './api/user.api';
 import { uploadsApi } from './api/uploads.api';
+import userSlice from './slices/userSlice';
 
 export const store = configureStore({
   reducer: {
-    // posts: postsSlice,
+    user: userSlice,
     [userApi.reducerPath]: userApi.reducer,
     [uploadsApi.reducerPath]: uploadsApi.reducer,
   },
