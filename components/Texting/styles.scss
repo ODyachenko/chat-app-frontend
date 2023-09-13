@@ -1,0 +1,72 @@
+.texting {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right bottom,
+    #bcc85a,
+    #9cc468,
+    #80be76,
+    #68b784,
+    #57ae8f
+  );
+  padding: 0 15px 15px;
+
+  &__user {
+    display: flex;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 0 -15px 20px;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  &__name {
+    font-weight: 600;
+  }
+  &__online {
+    font-size: 14px;
+    color: #707991;
+  }
+  &__messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    &-item {
+      display: inline-block;
+      background: #fff;
+      border-radius: 12px;
+      padding: 5px 12px;
+
+      &:nth-child(even) {
+        align-self: flex-end;
+        background: #78e378;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__field {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px 15px;
+
+    & textarea {
+      all: unset;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: inherit;
+      font-size: 16px;
+    }
+  }
+}

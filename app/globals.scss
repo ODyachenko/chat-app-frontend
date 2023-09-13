@@ -7,13 +7,17 @@ body {
   color: #011627;
   background: #f5f5f5;
 }
-.container {
-  max-width: 1250px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.wrapper {
-  padding: 25px 0;
+// .container {
+//   max-width: 1250px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+// }
+// .wrapper {
+//   padding: 25px 0;
+// }
+.app {
+  display: flex;
+  height: calc(100vh);
 }
 .primary-btn {
   text-transform: uppercase;
@@ -25,9 +29,9 @@ body {
   padding: 10px 10px;
 }
 @media (min-width: 1024px) {
-  .container {
-    padding: 0 25px;
-  }
+  // .container {
+  //   padding: 0 25px;
+  // }
   .primary-btn {
     transition: all 0.3s ease;
 
